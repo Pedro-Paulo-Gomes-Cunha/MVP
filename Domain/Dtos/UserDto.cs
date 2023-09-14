@@ -8,15 +8,17 @@ namespace Domain.Dtos
 {
    public class UserDto
     {
-        private string Nome { get; set; }
-        private string Senha { get; set; }
+        private int Id { get; set; }
+        private string Name { get; set; }
+        private string Password { get; set; }
 
         public UserDto() { }
 
-        public UserDto(string nome, string senha)
+        public UserDto(int id, string name, string Password)
         {
-            this.Nome = nome;
-            this.Senha = senha;
+            this.Id = id;
+            this.Name = name;
+            this.Password = Password;
         }
     }
 }
