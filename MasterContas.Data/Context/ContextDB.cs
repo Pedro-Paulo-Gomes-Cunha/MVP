@@ -1,10 +1,5 @@
 ﻿using Domain.DBObject;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MasterContas.Data.Context
 {
@@ -25,7 +20,8 @@ namespace MasterContas.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var stringConexao = "Data Source=USER\\SQLEXPRESS;Database=Okutanga;User=User1;Password=123456789;TrustServerCertificate=true;MultipleActiveResultSets=true";
+            // var stringConexao = "Data Source=DESKTOP-OFRCN20\\MR;Database=MasterContas;User=;Password=;TrustServerCertificate=true;MultipleActiveResultSets=true";
+            var stringConexao = "Data Source=DESKTOP-OFRCN20\\MR;Database=MasterContas;Integrated Security=SSPI;TrustServerCertificate=true;MultipleActiveResultSets=true";
             options.UseSqlServer(stringConexao);
         }
 

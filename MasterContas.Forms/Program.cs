@@ -1,3 +1,6 @@
+using Domain.Interfaces.IServices;
+using Domain.Services;
+
 namespace MasterContas.Forms
 {
     internal static class Program
@@ -14,4 +17,5 @@ namespace MasterContas.Forms
             Application.Run(new Form1());
         }
     }
-}
+    }
+ 

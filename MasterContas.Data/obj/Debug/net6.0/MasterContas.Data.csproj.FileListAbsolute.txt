@@ -1,0 +1,17 @@
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\MasterContas.Data.deps.json
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\MasterContas.Data.runtimeconfig.json
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\MasterContas.Data.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\MasterContas.Data.pdb
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\Domain.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\bin\Debug\net6.0\Domain.pdb
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.csproj.AssemblyReference.cache
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.AssemblyInfoInputs.cache
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.AssemblyInfo.cs
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.csproj.CoreCompileInputs.cache
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.csproj.CopyComplete
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\refint\MasterContas.Data.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.pdb
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\MasterContas.Data.genruntimeconfig.cache
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Data\obj\Debug\net6.0\ref\MasterContas.Data.dll

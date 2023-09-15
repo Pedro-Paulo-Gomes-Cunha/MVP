@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces.IRepositories
 {
-    public interface IUserRepository: IBaseRepository<UserDto>
+    public interface IUserRepository
     {
+        IEnumerable<UserDto> FindAll();
+        void Save(UserDto obj);
+        UserDto FindById(int id);
+        void Update(UserDto obj);
+        void Remove(UserDto obj);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace Domain.Entity
 {
     public class User
     {
-        private int Id { get; set; }
-        private string Name { get; set; }
-        private string Password { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
 
         public User() { }
 
@@ -19,6 +20,11 @@ namespace Domain.Entity
             this.Id = id;
             this.Name = name;
             this.Password = Password;
+        }
+
+        public UserDto ToDto()
+        {
+            return new UserDto(this.Id, this.Name, this.Password);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Domain.Dtos;
+using Domain.Interfaces.IRepositories;
 using Domain.Interfaces.IServices;
 using System;
 using System.Collections.Generic;
@@ -10,34 +11,43 @@ namespace Domain.Services
 {
     public class UserService : IUserService
     {
-        public void Add(UserDto obj)
+        
+
+        IRepositoryWrapper _repositoryWrapper;
+        public UserService(IRepositoryWrapper repositoryWrapper) => this._repositoryWrapper = repositoryWrapper;
+  
+
+        public void Save(UserDto obj)
         {
-            throw new NotImplementedException();
+            var userEntiy = obj.ToEntity();
+            if (string.IsNullOrWhiteSpace(userEntiy.Name) || string.IsNullOrWhiteSpace(userEntiy.Password))
+                return;
+
+            _repositoryWrapper.UserRepository.Save(userEntiy.ToDto());
         }
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
 
         public IEnumerable<UserDto> GetAll()
         {
-            throw new NotImplementedException();
+            return _repositoryWrapper.UserRepository.FindAll();
         }
 
         public UserDto GetById(int id)
         {
-            throw new NotImplementedException();
+            return _repositoryWrapper.UserRepository.FindById(id);
         }
 
         public void Remove(UserDto obj)
         {
-            throw new NotImplementedException();
+            _repositoryWrapper.UserRepository.Remove(obj);
         }
 
         public void Update(UserDto obj)
         {
-            throw new NotImplementedException();
+            _repositoryWrapper.UserRepository.Update(obj);
+
         }
+
+       
     }
 }

@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\MasterContas.Data\MasterContas.Data.csproj" />
+  </ItemGroup>
+
 </Project>
