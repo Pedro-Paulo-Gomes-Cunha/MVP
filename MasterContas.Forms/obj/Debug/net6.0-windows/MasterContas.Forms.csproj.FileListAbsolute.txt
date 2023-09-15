@@ -63,3 +63,6 @@ C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\ne
 C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\MasterContas.Data.dll
 C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\MasterContas.Data.pdb
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\Autofac.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\MasterContas.IOC.dll
+C:\Users\Master-Dev1\Desktop\Master\MasterContas\MasterContas.Forms\bin\Debug\net6.0-windows\MasterContas.IOC.pdb

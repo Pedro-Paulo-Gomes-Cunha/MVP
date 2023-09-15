@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "Autofac/5.1.4": {
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "assemblyVersion": "5.1.4.0",
+            "fileVersion": "5.1.4.0"
+          }
+        }
+      },
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -785,6 +793,13 @@
     }
   },
   "libraries": {
+    "Autofac/5.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MsAEZJNCBTwZ21cBaFosWvR+zNG3VXB8y8qn3HmYl6m9iR/CDqDQykqBzfApbqj3N1l2I4qVBPA2exIdHJvANQ==",
+      "path": "autofac/5.1.4",
+      "hashPath": "autofac.5.1.4.nupkg.sha512"
+    },
     "Azure.Core/1.24.0": {
       "type": "package",
       "serviceable": true,

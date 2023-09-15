@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\MasterContas.Data\MasterContas.Data.csproj" />
+    <ProjectReference Include="..\MasterContas.IOC\MasterContas.IOC.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "E9DIq/YEaO/54LuJUDXjwpKvQKC5RrVhNzKRQVOv1hs3W2x2Ct8V2WtZ/NP/869y4ic+/BJhux7iBHFM59CocQ==",
+  "dgSpecHash": "V1SjWt/646rXyZmk7x7Vi8sMNUEgv6pmgvcCZfKtfIE8YTkK2XO+rPhhJYLDXDxANHYAmTFNex9LqVp0ok6oig==",
   "success": true,
   "projectFilePath": "C:\\Users\\Master-Dev1\\Desktop\\Master\\MasterContas\\MasterContas.Forms\\MasterContas.Forms.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Master-Dev1\\.nuget\\packages\\autofac\\5.1.4\\autofac.5.1.4.nupkg.sha512",
     "C:\\Users\\Master-Dev1\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Master-Dev1\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Master-Dev1\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

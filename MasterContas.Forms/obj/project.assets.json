@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Autofac/5.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -1167,10 +1180,46 @@
         "runtime": {
           "bin/placeholder/MasterContas.Data.dll": {}
         }
+      },
+      "MasterContas.IOC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Autofac": "5.1.4",
+          "Domain": "1.0.0",
+          "MasterContas.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MasterContas.IOC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MasterContas.IOC.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Autofac/5.1.4": {
+      "sha512": "MsAEZJNCBTwZ21cBaFosWvR+zNG3VXB8y8qn3HmYl6m9iR/CDqDQykqBzfApbqj3N1l2I4qVBPA2exIdHJvANQ==",
+      "type": "package",
+      "path": "autofac/5.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.5.1.4.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net461/Autofac.dll",
+        "lib/net461/Autofac.pdb",
+        "lib/net461/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
     "Azure.Core/1.24.0": {
       "sha512": "+/qI1j2oU1S4/nvxb2k/wDsol00iGf1AyJX5g3epV7eOpQEP/2xcgh/cxgKMeFgn3U2fmgSiBnQZdkV+l5y0Uw==",
       "type": "package",
@@ -3497,12 +3546,18 @@
       "type": "project",
       "path": "../MasterContas.Data/MasterContas.Data.csproj",
       "msbuildProject": "../MasterContas.Data/MasterContas.Data.csproj"
+    },
+    "MasterContas.IOC/1.0.0": {
+      "type": "project",
+      "path": "../MasterContas.IOC/MasterContas.IOC.csproj",
+      "msbuildProject": "../MasterContas.IOC/MasterContas.IOC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Domain >= 1.0.0",
       "MasterContas.Data >= 1.0.0",
+      "MasterContas.IOC >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11"
     ]
   },
@@ -3543,6 +3598,9 @@
             },
             "C:\\Users\\Master-Dev1\\Desktop\\Master\\MasterContas\\MasterContas.Data\\MasterContas.Data.csproj": {
               "projectPath": "C:\\Users\\Master-Dev1\\Desktop\\Master\\MasterContas\\MasterContas.Data\\MasterContas.Data.csproj"
+            },
+            "C:\\Users\\Master-Dev1\\Desktop\\Master\\MasterContas\\MasterContas.IOC\\MasterContas.IOC.csproj": {
+              "projectPath": "C:\\Users\\Master-Dev1\\Desktop\\Master\\MasterContas\\MasterContas.IOC\\MasterContas.IOC.csproj"
             }
           }
         }

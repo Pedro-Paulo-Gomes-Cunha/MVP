@@ -9,10 +9,11 @@ namespace MasterContas.Forms
 {
     public partial class Form1 : Form
     {
-        UserService _Userservice = new UserService(null);
-        public Form1()
+        readonly IUserService _Userservice;
+        public Form1(IUserService _serservice)
         {
             InitializeComponent();
+            _Userservice = _serservice;
 
         }
 
