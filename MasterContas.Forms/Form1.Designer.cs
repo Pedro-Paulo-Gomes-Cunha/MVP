@@ -1,4 +1,4 @@
-﻿namespace MasterContas.Forms
+﻿namespace MasterContas.Presentation
 {
     partial class Form1
     {
@@ -71,6 +71,7 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabPage1";
             tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Click += tabPage1_Click;
             // 
             // button1
             // 
@@ -80,13 +81,13 @@
             button1.TabIndex = 4;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click_1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(52, 145);
+            label2.Location = new Point(19, 145);
             label2.Name = "label2";
             label2.Size = new Size(81, 21);
             label2.TabIndex = 3;
@@ -97,7 +98,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(78, 108);
+            label1.Location = new Point(45, 108);
             label1.Name = "label1";
             label1.Size = new Size(55, 21);
             label1.TabIndex = 2;
@@ -106,16 +107,16 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(139, 147);
+            textBox2.Location = new Point(106, 147);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(300, 23);
+            textBox2.Size = new Size(333, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(139, 110);
+            textBox1.Location = new Point(106, 110);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 23);
+            textBox1.Size = new Size(333, 23);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -135,10 +136,10 @@
             // 
             GradeUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GradeUsers.Columns.AddRange(new DataGridViewColumn[] { Column1, Column3, Column2 });
-            GradeUsers.Location = new Point(6, 93);
+            GradeUsers.Location = new Point(6, 61);
             GradeUsers.Name = "GradeUsers";
             GradeUsers.RowTemplate.Height = 25;
-            GradeUsers.Size = new Size(459, 307);
+            GradeUsers.Size = new Size(459, 339);
             GradeUsers.TabIndex = 0;
             GradeUsers.CellContentClick += dataGridView1_CellContentClick;
             // 

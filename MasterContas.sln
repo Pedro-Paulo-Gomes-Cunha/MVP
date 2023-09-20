@@ -23,7 +23,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterContas.Data", "MasterContas.Data\MasterContas.Data.csproj", "{FCBCF594-0B1C-4D1F-957C-8FF7BE649094}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterContas.Forms", "MasterContas.Forms\MasterContas.Forms.csproj", "{63D9A6CC-42C3-4167-8634-764A12FD0541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterContas.Presentation", "MasterContas.Forms\MasterContas.Presentation.csproj", "{63D9A6CC-42C3-4167-8634-764A12FD0541}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7C16640-ADAD-4364-B385-A7BA7F4DD867}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,20 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MasterContas.Forms.ModelViews
+namespace MasterContas.Presentation.IViews
 {
     public class ViewParser
     {
         public ViewParser()
         {
         }
+        
 
-     
-
-        public static UserView Parse(UserDto user)
+        public static UserDto Parse(UserView user)
         {
-            return new UserView(user.Id, user.Name, user.Password);
+            return new UserDto(user.Id, user.Name, user.PassWord);
         }
-
     }
 }
