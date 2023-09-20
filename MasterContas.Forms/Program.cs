@@ -32,11 +32,11 @@ namespace MasterContas.Presentation
 
            IUserService d = new UserService(new RepositoryWrapper());
 
-              var All_=new ServiceCollection();
-              All_.AddTransient<Form1>();
+             var All_=new ServiceCollection();
+             All_.AddTransient<Form1>();
             //  All_.AddSingleton;
             SetupContainer();
-             /* All_.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            /* All_.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
               All_.AddScoped<IUserService,UserService>();*/
 
 
