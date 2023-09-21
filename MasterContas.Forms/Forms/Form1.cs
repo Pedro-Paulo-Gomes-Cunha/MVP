@@ -4,23 +4,31 @@ using Domain.Interfaces.IRepositories;
 using Domain.Interfaces.IServices;
 using Domain.Services;
 using MasterContas.Data.Repositories;
-using MasterContas.Presentation.IViews;
+using MasterContas.Presentation.Interfaces.IViews;
 using MasterContas.Presentation.Presenter;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace MasterContas.Presentation
 {
     public partial class Form1 : Form, UserView
     {
-        IUserService userService;
-        readonly IUserService teste;
 
-        public Form1(IUserService t)
+
+        public event EventHandler ButtonClicked;
+        public event TabControlEventHandler TabClicked;
+
+        public Form1()
         {
             InitializeComponent();
 
-            teste = t;
+            button1.Click += (sender, e) => ButtonClicked?.Invoke(this, EventArgs.Empty); //btnSave Linked
+
+            tabControl1.Selected += (sender, e) => TabClicked?.Invoke(this, null); //TabControl action linked
+
+            new UserPresenter(this); //inicializing the Presenter
         }
+
 
 
         int UserView.Id { get => 0; set => value = 0; }
@@ -37,8 +45,6 @@ namespace MasterContas.Presentation
         }
 
 
-
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -50,30 +56,14 @@ namespace MasterContas.Presentation
         }
 
 
-
         private void button1_Click(object sender, EventArgs e)
-        {/*
+        {
 
-            if (string.IsNullOrEmpty(textBox1.Text))
-            {
-                return;
-            }
-            if (string.IsNullOrEmpty(textBox2.Text)) { return; }
-
-
-            var dados = new UserDto(0, textBox1.Text, textBox2.Text);
-            this._Userservice.Save(dados);
-            MessageBox.Show("Sucess!");  */
-
-            
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {/*
-            GradeUsers.DataSource = this._Userservice.GetAll().ToList();
-            GradeUsers.Refresh();*/
-            //  new UserPresenter(this, userService).add();
+        {
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -93,8 +83,7 @@ namespace MasterContas.Presentation
 
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
-            GradeUsers.DataSource = new UserPresenter(this).GetAll();
-            GradeUsers.Refresh();
+
 
         }
 
@@ -105,12 +94,20 @@ namespace MasterContas.Presentation
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            new UserPresenter(this).add();
+
         }
 
         public void add()
         {
-            throw new NotImplementedException();
+            MessageBox.Show("Usuario: " + textBox1.Text + "  Created");
+        }
+
+
+
+        public void Display(List<UserDto> users)
+        {
+            GradeUsers.DataSource = users;
+            GradeUsers.Refresh();
         }
     }
 }

@@ -2,7 +2,7 @@
 using Domain.Interfaces.IServices;
 using Domain.Services;
 using MasterContas.Data.Repositories;
-using MasterContas.Presentation.IViews;
+using MasterContas.Presentation.Interfaces.IViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,24 +15,40 @@ namespace MasterContas.Presentation.Presenter
     { 
 
         UserView View;
-          readonly  IUserService _UserService;
+        readonly  IUserService _UserService;
         public UserPresenter(UserView view)
         {
             View = view;
-            _UserService = new UserService(new RepositoryWrapper());
+            _UserService = new UserService(new RepositoryWrapper()); //Inicialize the service
+
+            View.ButtonClicked += HandleButtonClicked;
+            View.TabClicked += tabControl1_Selected;
         }
 
-        public void add()
+        public void Save()
         {
            
             _UserService.Save(ViewParser.Parse(View));
-            MessageBox.Show("Usuario: "+ View.Name + "  Created");
+          
         }
 
         public List<UserDto> GetAll()
         { 
           return  _UserService.GetAll().ToList();
      
+        }
+
+        private void HandleButtonClicked(object sender, EventArgs e)
+        {
+            Save();
+            View.add();
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+         
+            View.Display(GetAll());
+
         }
     }
 }

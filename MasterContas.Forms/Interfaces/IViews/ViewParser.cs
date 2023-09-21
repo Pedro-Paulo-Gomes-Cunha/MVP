@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MasterContas.Presentation.IViews
+namespace MasterContas.Presentation.Interfaces.IViews
 {
     public class ViewParser
     {
         public ViewParser()
         {
         }
-        
+
 
         public static UserDto Parse(UserView user)
         {

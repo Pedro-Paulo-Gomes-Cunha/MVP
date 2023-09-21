@@ -30,7 +30,7 @@ namespace MasterContas.Presentation
             ApplicationConfiguration.Initialize();
 
 
-           IUserService d = new UserService(new RepositoryWrapper());
+         /*  IUserService d = new UserService(new RepositoryWrapper());
 
              var All_=new ServiceCollection();
              All_.AddTransient<Form1>();
@@ -40,27 +40,27 @@ namespace MasterContas.Presentation
               All_.AddScoped<IUserService,UserService>();*/
 
 
-            using ServiceProvider servicePro=All_.BuildServiceProvider();
+          /*  using ServiceProvider servicePro=All_.BuildServiceProvider();*/
             ///var Tela= servicePro.GetRequiredService<Form1>();
-            Application.Run( new Form1(d)) ;
+            Application.Run( new Form1()) ;
 
             //factory  ou abtractFactory      Observer, interactor
 
         }
 
-        public static void ConfigureContainer(ContainerBuilder builder)
+      /*  public static void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new ModuleIOC());
         }
 
         private static Autofac.IContainer SetupContainer()
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterModule(new ModuleIOC());
+         //   var builder = new ContainerBuilder();
+         //builder.RegisterModule(new ModuleIOC());
            // builder.RegisterModule(new ConfigurationSettingsReader("autofac"));
 
             return builder.Build();
-        }
+        }*/
 
 
 

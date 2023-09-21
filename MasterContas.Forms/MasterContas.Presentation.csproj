@@ -27,4 +27,9 @@
     <ProjectReference Include="..\MasterContas.IOC\MasterContas.IOC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\IPresenters\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+
 </Project>

@@ -81,7 +81,6 @@
             button1.TabIndex = 4;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
             // 
             // label2
             // 
